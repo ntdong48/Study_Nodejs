@@ -28,7 +28,7 @@ app.engine('hbs', handlebars({
   extname: '.hbs'
 })); 
 app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, 'resources/views'));
+app.set('views', path.join(__dirname, 'resources' , 'views'));
 
 
 route(app);
@@ -39,5 +39,5 @@ route(app);
 
 
 app.listen(port, () => {
-  console.log(` aaaaat http://localhost:${port}`)
+  console.log(` Server listening at http://localhost:${port}`)
 })
